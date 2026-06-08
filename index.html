@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Oasis</title>
+</head>
+<body>
+
+<section id="home" class="hero-section">
+    <img src="imgs/fundo.jpg" alt="Oasis" class="hero-bg-img">
+
+    <div class="hero-overlay">
+        <div class="hero-content">
+            
+            <div class="hero-brand">
+                <div class="hero-logo-box">
+                    <img src="imgs/gota.png" alt="logo do projeto" class="hero-logo-img">
+                </div>
+                <div class="hero-titles">
+                    <h1>OASIS</h1>
+                    <h2>Sistema de Acionamento de Emergência</h2>
+                </div>
+            </div>
+            
+            <p class="hero-tagline">Um refúgio em meio ao caos. Proteção e segurança ao alcance de um <br> toque.</p>
+            
+            <div class="hero-badges">
+                <div class="badge-item">
+                    <img src="imgs/escudo.png" alt="icon escudo" class="hero-badge-img">
+                    <span class="badge-text">Proteção 24/7</span>
+                </div>
+                <div class="badge-item">
+                    <img src="imgs/gps-sim.png" alt="icon localização" class="hero-badge-img">
+                    <span class="badge-text">Geolocalização</span>
+                </div>
+                <div class="badge-item">
+                    <img src="imgs/raio.png" alt="icon raio" class="hero-badge-img">
+                    <span class="badge-text">Resposta Rápida</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<header class="main-header">
+    <div class="header-container">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#publico-alvo">Público</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#aplicacao">Aplicação</a></li>
+                <li class="item-seletor-tema">
+                    <button class="botao-gode-gatilho" onclick="alternarMenuTema(event)">
+                        <img src="imgs/gode.svg" alt="Menu de Temas">
+                    </button>
+                    
+                    <div id="menu-opcoes-tema" class="janela-opcoes-temas">
+                        <button onclick="mudarTema('padrao')">
+                            <img src="imgs/padrao.png" alt="Sol"> Padrão
+                        </button>
+                        <button onclick="mudarTema('dark')">
+                            <img src="imgs/Dark.png" alt="Lua"> Escuro
+                        </button>
+                        <button onclick="mudarTema('oasis')">
+                            <img src="imgs/Cacto.png" alt="Cacto"> Oásis
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script src="script.js"></script>
+</body>
+</html>

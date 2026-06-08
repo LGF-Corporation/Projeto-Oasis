@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* variáveis que o prof Lucas falou pra usar/ não tenho certeza se precisa por com outro tipo  */
+:root, [data-theme="padrao"] {
+    --detalhe: #065f46;       
+    --camada: #059668ee; 
+    --camada-fim:#0f766dee;
+    --efeito: #064e3b;
+    --texto: #ffffff;
+    --fonte: 'Montserrat', sans-serif;
+    --fundo: #ffffff23;  
+    --borda: #ffffff62;
+    --secao: #f4f9f6;        /* Fundo atrás do menu */
+    --arredondado: #e9eff2;       /* Fundo da barra menu*/
+    --texto-menu: #666666;        /* Texto do menu */
+    --fundo-menu: #ffffff;        /* Fundo do botão selecionado na parte do meniu*/
+}
+
+ [data-theme="dark"] {
+     --detalhe: #03271d;       
+    --camada: #003021c7; 
+    --efeito: #031a13;
+    --texto: #ffffff;
+    --fonte: 'Montserrat', sans-serif;
+    --fundo: #ffffff23;  
+    --borda: #ffffff62;
+    --secao: #f4f9f6;        /* Fundo atrás do menu */
+    --arredondado: #e9eff2;       /* Fundo da barra menu*/
+    --texto-menu: #666666;        /* Texto do menu */
+    --fundo-menu: #ffffff;        /* Fundo do botão selecionado na parte do meniu*/
+ }
+
+ [data-theme="oasis"] {
+    --detalhe: #065f46;       
+    --camada: #cbb393c0;
+    --efeito: #064e3b;
+    --texto: #ffffff;
+    --fonte: 'Montserrat', sans-serif;
+    --fundo: #b4530933;  
+    --borda: #78360f56;
+    --secao: #faf6e7;      /* Fundo atrás do menu */
+    --arredondado: #fce7c7f5;  /* Fundo da barra menu*/
+    --texto-menu: #666666;        /* Texto do menu */
+    --fundo-menu: #fffbeb;          /* Fundo do botão selecionado na parte do meniu*/
+ }
+
+
+
+/* tira a borda branca feia*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fonte);
+}
+
+/* o hero começa agora */
+.hero-section {
+    width: 100%;
+    min-height: 400px; 
+    position: relative; 
+    overflow: hidden;   
+}
+
+/* imagem do oasis que fica atrás da camada verde */
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;        
+}
+
+/* Camada verde que fica em cima da foto do oasis */
+.hero-overlay {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(55deg,  var(--camada), var(--camada-fim));
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    z-index: 1;        
+}
+
+/* Isso deixa o texto do hero alinhadinho*/
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;        
+}
+
+/* Isso deixa "Oasis" do lado da gota*/
+.hero-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Quadrado que fica no fundo da logo */
+.hero-logo-box {
+    width: 70px; 
+    height: 70px;
+    background-color: var(--borda);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+/* Imagem da Gota */
+.hero-logo-img {
+    width: 50px;    
+    height: 50px;
+    object-fit: contain; 
+}
+
+/* texto q tá no hero */
+.hero-titles h1 {
+    color: var(--texto);
+    font-size: 3.5rem;
+    font-weight: 750;
+    letter-spacing: -1sspx;
+    line-height: 1;
+    font-family: Montserrat;
+}
+
+.hero-titles h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 1px;
+}
+
+/* Frase que tá no hero */
+.hero-tagline {
+    color: var(--texto);
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.4;
+}
+
+
+.hero-badges {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.badge-item {
+    background-color: var(--fundo);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--texto);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.hero-badge-img {
+    width: 18px;         
+    height: 18px;
+    object-fit: contain;  
+    opacity: 0.9;        
+}
+
+/* menu arredondado */
+.main-header {
+    width: 100%;
+    background-color: var(--secao); 
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: auto;
+}
+
+/* Barra do arredondadinho externo do menu */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    background-color: var(--arredondado);
+    padding: 6px;
+    border-radius: 50px; 
+    gap: 5px;
+}
+
+/* link do menu mais arredondadinho */
+.nav-menu a {
+    display: block;
+    color: var(--texto-menu);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 40px; 
+    transition: all 0.3s ease; 
+}
+
+/* hover do menu pra ficar bonitinho --- depois acho melhor mudar o cinza*/
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu a.active {
+    background-color: var(--fundo-menu);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06); 
+    color: var(--texto-menu);
+}
+
+.item-seletor-tema {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.botao-gode-gatilho {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.botao-gode-gatilho:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.botao-gode-gatilho img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.janela-opcoes-temas {
+    display: none; 
+    position: absolute;
+    top: 50px; 
+    right: 0; 
+    background-color: var(--fundo-menu);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 8px;
+    min-width: 150px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    gap: 4px;
+    z-index: 99;
+}
+
+.janela-opcoes-temas.aberto {
+    display: flex;
+}
+
+/* texto que tá no gode */
+.janela-opcoes-temas button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    font-family: var(--fonte);
+    font-weight: 600;
+    color: var(--texto-menu);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.janela-opcoes-temas button img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.janela-opcoes-temas button:hover {
+    background-color: var(--arredondado);
+}
+
+/* aq é o começo da responsividadee*/
+
+@media (max-width: 600px) {
+
+    /* Hero Containers */
+    .hero-section,
+    .hero-overlay {
+        min-height: 340px;
+    }
+
+    .hero-overlay {
+        padding: 32px 20px;       
+    }
+
+    .hero-brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+
+    .hero-logo-box {
+        width: 55px;
+        height: 55px;
+        border-radius: 14px;
+    }
+
+    .hero-logo-img {
+        width: 35px;               
+        height: 35px;
+    }
+
+    .hero-titles h1 {
+        font-size: 3rem;         
+        letter-spacing: -1.5px;
+        line-height: 0.9;
+    }
+
+    .hero-titles h2 {
+        font-size: 0.95rem;
+        margin-top: -2px;          
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .hero-badges {
+        flex-direction: column;   
+        gap: 10px;
+        width: 100%;
+    }
+
+    .badge-item {
+        width: 100%;
+        justify-content: flex-start; 
+    }
+
+    /* Menu Horizontal com Scroll Inteligente */
+    .main-header {
+        padding: 20px 16px;
+    }
+
+    .header-container {
+        width: 100%;
+        overflow-x: auto; 
+        padding-bottom: 10px; 
+    }
+
+    .header-container::-webkit-scrollbar {
+        height: 5px; 
+    }
+
+    .header-container::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05); 
+        border-radius: 10px;
+    }
+
+    .header-container::-webkit-scrollbar-thumb {
+        background: var(--arredondado); 
+        border-radius: 10px;
+    }
+
+    .nav-menu ul {
+        width: max-content;
+    }
+
+    .nav-menu a {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+        white-space: nowrap;
+    }
+}
