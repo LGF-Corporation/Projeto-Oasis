@@ -73,5 +73,5 @@ function slide3() {
     setTimeout(slide1, intervalo);
 }
 
-// Inicializa apenas o carrossel de slides que está funcionando perfeitamente
+
 slide1();

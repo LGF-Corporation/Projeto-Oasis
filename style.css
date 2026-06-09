@@ -803,6 +803,118 @@ body {
     font-weight: 300;
     line-height: 1.6;
 }
+.sec-aplicacao {
+    background-color: var(--secao);
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+}
+
+.apl-topo {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.apl-titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--detalhe);
+}
+
+.apl-titulo span {
+    color: #059668;
+}
+
+.apl-card {
+    background: var(--detalhe);
+    border-radius: 20px;
+    max-width: 950px; 
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.apl-card-topo {
+    padding: 2.5rem 2.5rem 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.apl-card-titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.apl-card-subtitulo {
+    font-size: 13px;
+    color: #9FE1CB;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.apl-separa {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 2.5rem;
+}
+
+.apl-card-body {
+    padding: 1.5rem 2.5rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.apl-card-p {
+    flex: 1;
+}
+
+.apl-card-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: #5DCAA5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.apl-card-texto {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.apl-card-texto strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.apl-card-rodape {
+    padding: 2rem 2.5rem;
+    display: block;          
+    text-align: center;      
+    position: relative;
+    z-index: 1;
+}
+
+
+.apl-card-rodape img {
+    max-width: 100%;        
+    height: auto;            
+    display: inline-block;   
+    margin: 0 auto;        
+    border-radius: 12px;     
+    background-color: #000; 
+}
+
+
 
 /* aq é o começo da responsividadee*/
 
@@ -963,6 +1075,27 @@ body {
 
     .slide-img {
         height: 260px;
+    }
+
+    .apl-card-body {
+        flex-direction: column;
+    }
+
+    .apl-card-topo {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .apl-card-body {
+        padding: 1rem 1.5rem 1.5rem;
+    }
+
+    .apl-separa {
+        margin: 0 1.5rem;
+    }
+
+    .apl-card-rodape {
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap;
     }
 
     
