@@ -19,3 +19,17 @@ const temaGuardado = localStorage.getItem('temaSalvo');
 if (temaGuardado) {
     document.documentElement.setAttribute('data-theme', temaGuardado);
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('visivel');
+            }, i * 200);
+        }
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.obj-card').forEach(card => {
+    observer.observe(card);
+});
