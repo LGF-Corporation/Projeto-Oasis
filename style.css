@@ -131,7 +131,7 @@ body {
     color: var(--texto);
     font-size: 3.5rem;
     font-weight: 750;
-    letter-spacing: -1sspx;
+    letter-spacing: -1px;
     line-height: 1;
     font-family: Montserrat;
 }
@@ -429,14 +429,6 @@ body {
     color: #059668;
 }
 
-.linha {
-    width: 36px;
-    height: 2px;
-    background: var(--detalhe);
-    border-radius: 999px;
-    margin-bottom: 1rem;
-}
-
 .tec-texto {
     font-size: 1rem;
     color: var(--texto-menu);
@@ -544,8 +536,7 @@ body {
     max-width: 280px;
     width: 100%;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
+    opacity: 1;
 }
 
 .obj-card.visivel {
@@ -735,10 +726,82 @@ body {
 /* Posição dos pins no mapa */
 #pin-viajante    { top: 75%; left: 29%; }
 #pin-resgatador  { top: 66%; left: 73%; }
+/* BENEFICIOS */
+.beneficios {
+    background-color: var(--secao);
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+}
 
-.pub-texto {
-    text-align:center; 
-    margin-top: 1.5rem;
+.topo-ben {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-ben {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--detalhe);
+}
+
+.titulo-ben span {
+    color: #059668;
+}
+
+.subtitulo-ben {
+    font-size: 15px;
+    color: var(--texto-menu);
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+.slideshow {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative; 
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none; 
+    width: 100%;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+
+.slide-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(6, 49, 35, 0.85));
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.titulo-card {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #9FE1CB;
+    margin-bottom: 0.4rem;
+}
+
+.texto-card {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+    line-height: 1.6;
 }
 
 /* aq é o começo da responsividadee*/
@@ -852,11 +915,6 @@ body {
         font-size: 0.95rem;
         padding: 1rem 1.25rem;
     }
-     .sec-tecnologia {
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 1rem;
-    }
 
     .tec-card-preto {
         width: 100%;
@@ -873,7 +931,7 @@ body {
     }
 
     .obj-lado,
-    .obj-lado-dir {
+    .obj-lado-outro {
         justify-content: center;
         width: 100%;
     }
@@ -901,6 +959,10 @@ body {
 
     .pub-pin-label {
         font-size: 9px;
+    }
+
+    .slide-img {
+        height: 260px;
     }
 
     
