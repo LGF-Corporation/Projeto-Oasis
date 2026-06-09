@@ -33,3 +33,11 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.obj-card').forEach(card => {
     observer.observe(card);
 });
+
+function ativarPin(id) {
+    document.querySelectorAll('.pub-popup').forEach(p => p.classList.remove('visivel'));
+    document.querySelectorAll('.pub-pin').forEach(p => p.classList.remove('ativo'));
+
+    document.getElementById('popup-' + id).classList.add('visivel');
+    document.getElementById('pin-' + id).classList.add('ativo');
+}
