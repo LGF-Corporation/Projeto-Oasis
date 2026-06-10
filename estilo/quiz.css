@@ -354,8 +354,6 @@ main {
 .finish button:hover {
     opacity: 0.85;
 }
-
-/* ===== FOOTER ===== */
 .foo-rodape {
     background-color: var(--detalhe);
     color: rgba(255, 255, 255, 0.8);

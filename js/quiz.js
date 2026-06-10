@@ -1,27 +1,27 @@
 // canal Will Dev - quiz com js
 const questions = [
     {
-        question: "Quanto é 1 + 2",
+        question: "Qual item é mais urgente doar nos primeiros dias pós-desastre?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Água potável mineral e alimentos prontos não perecíveis.", correct: true },
+            { Option: "Roupas de festa e calçados com salto alto.", correct: false },
+            { Option: "Móveis grandes de madeira e eletrodomésticos pesados.", correct: false },
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Como devem estar as roupas e calçados enviados para doação?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Limpos, em bom estado e com tamanhos organizados.", correct: true },
+            { Option: "Rasgados ou sujos, pois serão lavados no local", correct: false },
+            { Option: "Misturados em sacos pretos sem nenhuma identificação.", correct: false },
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Qual a vantagem de doar dinheiro via canais oficiais Pix?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Garante que o doador ganhe prêmios em dinheiro de volta.", correct: false },
+            { Option: "Permite comprar recursos direto na região, movimentando o comércio local.", correct: true },
+            { Option: "Obriga a central a enviar brindes físicos para sua casa.", correct: false },
         ],
     },
     {
