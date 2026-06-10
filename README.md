@@ -1,4 +1,4 @@
-# Oasis — Monitoramento e Resiliência em Áreas de Risco
+# Oasis — Monitoramento e Resiliência em Áreas de Risco 🚨
 
 O Oasis é um sistema web voltado para situações de desastre natural, com foco em educação comunitária e suporte à comunicação em momentos de crise.
 
@@ -6,7 +6,7 @@ O projeto foi desenvolvido como trabalho acadêmico para a FIAP (2026), pela Cor
 
 ---
 
-## OasisOn — A Pulseira 
+## OasisOn — A Pulseira 💥
 
 O principal produto do ecossistema Oasis. A OasisOn é uma pulseira vestível pensada para moradores e viajantes em regiões de risco. Em caso de emergência, a pessoa aperta o botão da pulseira, que emite um alerta direto para o site do Oasis. O sistema então aciona as autoridades competentes automaticamente.
 
@@ -14,13 +14,13 @@ O principal produto do ecossistema Oasis. A OasisOn é uma pulseira vestível pe
 
 ---
 
-## O problema que o sistema tenta resolver
+## O problema que o sistema tenta resolver 🌍
 
 Em desastres como enchentes ou secas extremas, a falta de informação e preparo da população agrava os danos. O Oasis atua na prevenção e na resposta: informando a comunidade sobre alertas ativos e treinando pessoas para agir corretamente em emergências.
 
 ---
 
-## Páginas do projeto
+## Páginas do projeto 📄
 
 *index.html — Página inicial*
 Apresentação do sistema. Inclui um carrossel para exibição de alertas ativos para a comunidade.
@@ -36,7 +36,7 @@ Formulário para reportar pontos de risco ou tirar dúvidas sobre o funcionament
 
 ---
 
-## Detalhes técnicos
+## Detalhes técnicos ⚙️
 
 *Temas visuais*
 O sistema tem três modos: Padrão, Dark e Oasis. A escolha fica salva no localStorage, então persiste mesmo sem conexão.
@@ -49,14 +49,14 @@ Se o usuário tentar avançar sem selecionar uma resposta, o sistema exibe um al
 
 ---
 
-## Como testar
+## Como testar ❓
 
 1. Alterne entre os temas pelo menu de opções.
 2. No quiz, tente avançar sem responder para ver a validação em ação.
 
 ---
 
-## Integrantes — Corporação LGF
+## Integrantes — Corporação LGF 💚
 
 - *Flávia Camerim de Sousa*
 - *Giovanna Nunes Leme* 
