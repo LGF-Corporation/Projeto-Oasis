@@ -65,19 +65,19 @@ const questions = [
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Como ajudar os animais de estimação resgatados nos abrigos?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Doando ração lacrada para cães e gatos e guias de transporte.", correct: true },
+            { Option: "Enviando restos de comida caseira azeda em sacolas plásticas.", correct: false },
+            { Option: " Soltando os animais nas ruas para que busquem água sozinhos.", correct: false },
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Quem não pode ir ao local pode ajudar de qual forma?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Compartilhando informações oficiais de arrecadação ou oferecendo escuta remota.", correct: true },
+            { Option: "Ligando para as linhas de emergência (193) apenas para conversar.", correct: false },
+            { Option: "Reclamando na internet sem propor nenhuma ação prática.", correct: false },
         ],
     },
 
