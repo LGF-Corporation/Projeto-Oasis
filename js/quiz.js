@@ -44,24 +44,24 @@ const questions = [
         question: "Como garantir que seu Pix de doação vá para o lugar certo?",
         answears: [
             { Option: "Verificar a chave nos canais oficiais do governo ou Defesa Civil.", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Transferir para contas enviadas por mensagens anônimas de WhatsApp.", correct: false },
+            { Option: " Clicar em qualquer link patrocinado que aparecer nas redes sociais.", correct: false },
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Qual o papel do voluntário nos centros de arrecadação do Oasis?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Separar, classificar e embalar os suprimentos por categorias.", correct: true },
+            { Option: "Decidir sozinho quem deve receber os kits sem seguir protocolos.", correct: false },
+            { Option: "Guardar os melhores itens doados para uso próprio.", correct: false },
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "O que é indispensável em um kit de higiene para abrigos?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Sabonete, escova, creme dental e absorventes higiênicos femininos.", correct: true },
+            { Option: "Maquiagens importadas, perfumes caros e tinturas de cabelo.", correct: false },
+            { Option: "Apenas toalhas de banho usadas sem nenhum produto de limpeza.", correct: false },
         ],
     },
     {
