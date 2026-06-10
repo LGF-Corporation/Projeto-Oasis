@@ -25,11 +25,11 @@ const questions = [
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Que cuidado ter ao separar alimentos para a cesta de doação?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Enviar pacotes já abertos e usados para evitar desperdício", correct: false },
+            { Option: "Priorizar produtos congelados que estragam fora da geladeira.", correct: false },
+            { Option: "Checar se a validade resiste por pelo menos três meses.", correct: true },
         ],
     },
     {
