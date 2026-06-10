@@ -33,17 +33,17 @@ const questions = [
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Como ajudar pessoas que perderam remédios de uso contínuo?",
         answears: [
-            { Option: "3", correct: true },
-            { Option: "2", correct: false },
-            { Option: "4", correct: false },
+            { Option: "Entregar medicamentos lacrados diretamente nos postos de triagem oficiais.", correct: true },
+            { Option: "Enviar cartelas de remédios vencidas ou sem a caixa original.", correct: false },
+            { Option: " Deixar frascos abertos em calçadas perto da área afetada.", correct: false },
         ],
     },
     {
-        question: "Quanto é 1 + 2",
+        question: "Como garantir que seu Pix de doação vá para o lugar certo?",
         answears: [
-            { Option: "3", correct: true },
+            { Option: "Verificar a chave nos canais oficiais do governo ou Defesa Civil.", correct: true },
             { Option: "2", correct: false },
             { Option: "4", correct: false },
         ],
