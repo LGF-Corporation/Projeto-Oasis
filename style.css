@@ -1,94 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* variáveis que o prof Lucas falou pra usar/ não tenho certeza se precisa por com outro tipo  */
+
 :root, [data-theme="padrao"] {
-    --detalhe: #065f46;       
-    --camada: #059668ee; 
-    --camada-fim:#0f766dee;
+    --detalhe: #065f46;
+    --detalhe-medio: #059668;
+    --detalhe-claro: #5DCAA5;
+    --detalhe-suave: #9FE1CB;
+    --camada: #059668ee;
+    --camada-fim: #0f766dee;
     --efeito: #064e3b;
     --texto: #ffffff;
-    --fonte: 'Montserrat', sans-serif;
-    --fundo: #ffffff23;  
+    --texto-escuro: #0a0a0a;
+    --texto-suave: #ffffffbf;
+    --texto-apagado: #ffffffd9;
+    --secao: #f4f9f6;
+    --fundo-menu: #ffffff;
+    --fundo-escuro: #000000;
+    --arredondado: #e9f2ef;
+    --margem: #d1fae5;
+    --texto-menu: #0a0a0a;
+    --fundo: #ffffff23;
     --borda: #ffffff62;
-    --secao: #f4f9f6;        /* Fundo atrás do menu */
-    --arredondado: #e9f2ef;    
-    --margem:#d1fae5;   /* Fundo da barra menu*/
-    --texto-menu: #0a0a0a;        /* Texto do menu */
-    --fundo-menu: #ffffff;        /* Fundo do botão selecionado na parte do meniu*/
+    --borda-card: #d1fae5;
+    --tag-fundo: #065f4614;
+    --tag-borda: #d1fae5;
+    --tag-texto: #065f46;
+    --gradiente-slide: #063123d9;
+    --borda-sutil: #ffffff1a;
+    --hover-menu: #ffffff80;
+    --sombra-leve: #0000000f;
+    --sombra-media: #00000026;
+    --texto-slide: #ffffffd9;
+    --fonte: 'Montserrat', sans-serif;
 }
 
- [data-theme="dark"] {
-     --detalhe: #03271d;       
-    --camada: #003021c7; 
-    --efeito: #031a13;
-    --texto: #ffffff;
+[data-theme="dark"] {
+    --detalhe: #147257;
+    --detalhe-medio: #065f46;
+    --detalhe-claro: #1D9E75;
+    --detalhe-suave: #5DCAA5;
+    --camada: #001a10ee;
+    --camada-fim: #003021ee;
+    --efeito: #010d08;
+    --texto: #e8f5f0;
+    --texto-escuro: #c8ddd6;
+    --texto-suave: #c8f0dbbf;
+    --texto-apagado: #c8f0dbd9;
+    --secao: #0d1f18;
+    --fundo-menu: #122b20;
+    --fundo-escuro: #000000;
+    --arredondado: #1a3d2e;
+    --margem: #1a4a35;
+    --texto-menu: #a8c9bc;
+    --fundo: #ffffff10;
+    --borda: #ffffff30;
+    --borda-card: #1a4a35;
+    --tag-fundo: #1d9e7514;
+    --tag-borda: #1a4a35;
+    --tag-texto: #5DCAA5;
+    --gradiente-slide: #02522a90;
+    --borda-sutil: #ffffff1a;
+    --hover-menu: #ffffff80;
+    --sombra-leve: #0000000f;
+    --sombra-media: #00000026;
+    --texto-slide: #c8f0dbd9;
     --fonte: 'Montserrat', sans-serif;
-    --fundo: #ffffff23;  
-    --borda: #ffffff62;
-    --secao: #f4f9f6;        /* Fundo atrás do menu */
-    --arredondado: #e9eff2;       /* Fundo da barra menu*/
-    --texto-menu: #666666;        /* Texto do menu */
-    --fundo-menu: #ffffff;        /* Fundo do botão selecionado na parte do meniu*/
- }
+}
 
- [data-theme="oasis"] {
-    --detalhe: #065f46;       
-    --camada: #cbb393c0;
-    --efeito: #064e3b;
+[data-theme="oasis"] {
+    --detalhe: #7c4a1e;
+    --detalhe-medio: #b5651d;
+    --detalhe-claro: #d4a96a;
+    --detalhe-suave: #e8c99a;
+    --camada: #c2853aee;
+    --camada-fim: #8b5a2bee;
+    --efeito: #5c3310;
     --texto: #ffffff;
-    --fonte: 'Montserrat', sans-serif;
-    --fundo: #b4530933;  
+    --texto-escuro: #3b2006;
+    --texto-suave: #fff5e6bf;
+    --texto-apagado: #fff5e6d9;
+    --secao: #fdf6e3;
+    --fundo-menu: #fffbeb;
+    --fundo-escuro: #000000;
+    --arredondado: #fce7c7;
+    --margem: #f5d49a;
+    --texto-menu: #5c3310;
+    --fundo: #b4530933;
     --borda: #78360f56;
-    --secao: #faf6e7;      /* Fundo atrás do menu */
-    --arredondado: #fce7c7f5;  /* Fundo da barra menu*/
-    --texto-menu: #666666;        /* Texto do menu */
-    --fundo-menu: #fffbeb;          /* Fundo do botão selecionado na parte do meniu*/
- }
+    --borda-card: #f5d49a;
+    --tag-fundo: #7c4a1e14;
+    --tag-borda: #f5d49a;
+    --tag-texto: #7c4a1e;
+    --gradiente-slide: #3c1e05d9;
+    --borda-sutil: #ffffff1a;
+    --hover-menu: #ffffff80;
+    --sombra-leve: #0000000f;
+    --sombra-media: #00000026;
+    --texto-slide: #fff5e6d9;
+    --fonte: 'Montserrat', sans-serif;
+}
 
-
-
-/* tira a borda branca feia*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: var(--fonte);
     background-color: var(--secao);
 }
 
-/* o hero começa agora */
 .hero-section {
     width: 100%;
-    min-height: 400px; 
-    position: relative; 
-    overflow: hidden;   
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* imagem do oasis que fica atrás da camada verde */
 .hero-bg-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    z-index: 1;        
+    object-fit: cover;
+    z-index: 1;
 }
 
-/* Camada verde que fica em cima da foto do oasis */
 .hero-overlay {
     width: 100%;
     min-height: 400px;
-    background: linear-gradient(135deg,  var(--camada), var(--camada-fim));
+    background: linear-gradient(135deg, var(--camada), var(--camada-fim));
     display: flex;
     align-items: center;
     padding: 40px;
     position: relative;
-    z-index: 1;        
+    z-index: 1;
 }
 
-/* Isso deixa o texto do hero alinhadinho*/
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -97,36 +146,32 @@ body {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 3;        
+    z-index: 3;
 }
 
-/* Isso deixa "Oasis" do lado da gota*/
 .hero-brand {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Quadrado que fica no fundo da logo */
 .hero-logo-box {
-    width: 70px; 
+    width: 70px;
     height: 70px;
     background-color: var(--borda);
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-/* Imagem da Gota */
 .hero-logo-img {
-    width: 50px;    
+    width: 50px;
     height: 50px;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
-/* texto q tá no hero */
 .hero-titles h1 {
     color: var(--texto);
     font-size: 3.5rem;
@@ -137,13 +182,12 @@ body {
 }
 
 .hero-titles h2 {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--texto-suave);
     font-size: 1.15rem;
     font-weight: 400;
     margin-top: 1px;
 }
 
-/* Frase que tá no hero */
 .hero-tagline {
     color: var(--texto);
     font-size: 1.25rem;
@@ -151,7 +195,6 @@ body {
     max-width: 700px;
     line-height: 1.4;
 }
-
 
 .hero-badges {
     display: flex;
@@ -174,17 +217,16 @@ body {
 }
 
 .hero-badge-img {
-    width: 28px;         
+    width: 28px;
     height: 28px;
-    object-fit: contain;  
-    opacity: 0.9;        
+    object-fit: contain;
+    opacity: 0.9;
 }
 
-/* menu arredondado */
 .main-header {
     width: 100%;
-    background-color: var(--secao); 
-    padding: 40px 20px; 
+    background-color: var(--secao);
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
 }
@@ -193,17 +235,15 @@ body {
     width: auto;
 }
 
-/* Barra do arredondadinho externo do menu */
 .nav-menu ul {
     display: flex;
     list-style: none;
     background-color: var(--arredondado);
     padding: 6px;
-    border-radius: 50px; 
+    border-radius: 50px;
     gap: 5px;
 }
 
-/* link do menu mais arredondadinho */
 .nav-menu a {
     display: block;
     color: var(--texto-menu);
@@ -211,18 +251,17 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     padding: 10px 24px;
-    border-radius: 40px; 
-    transition: all 0.3s ease; 
+    border-radius: 40px;
+    transition: all 0.3s ease;
 }
 
-/* hover do menu pra ficar bonitinho --- depois acho melhor mudar o cinza*/
 .nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--hover-menu);
 }
 
 .nav-menu a.active {
     background-color: var(--fundo-menu);
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06); 
+    box-shadow: 0px 2px 6px var(--sombra-leve);
     color: var(--texto-menu);
 }
 
@@ -245,7 +284,7 @@ body {
 }
 
 .botao-gode-gatilho:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--hover-menu);
 }
 
 .botao-gode-gatilho img {
@@ -255,16 +294,16 @@ body {
 }
 
 .janela-opcoes-temas {
-    display: none; 
+    display: none;
     position: absolute;
-    top: 50px; 
-    right: 0; 
+    top: 50px;
+    right: 0;
     background-color: var(--fundo-menu);
     border: 1px solid var(--borda);
     border-radius: 16px;
     padding: 8px;
     min-width: 150px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 12px var(--sombra-media);
     flex-direction: column;
     gap: 4px;
     z-index: 99;
@@ -274,7 +313,6 @@ body {
     display: flex;
 }
 
-/* texto que tá no gode */
 .janela-opcoes-temas button {
     display: flex;
     align-items: center;
@@ -302,40 +340,39 @@ body {
     background-color: var(--arredondado);
 }
 
-
-/* sec 1 */
 .sec-problema {
     width: 100%;
-    background-color: var(--secao); 
-    padding: 5px;           
+    background-color: var(--secao);
+    padding: 5px;
     display: flex;
 }
 
 .sec-problema .container {
-    max-width: 650px;              
+    max-width: 650px;
     width: 100%;
-    text-align: center;       
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;       
+    align-items: center;
     justify-content: center;
-    margin: 0 auto;                                 
+    margin: 0 auto;
 }
 
 .sec-problema h2.identity-title {
-    color: var(--detalhe);          
-    font-size: 2.5rem;              
-    font-weight: 750;               
+    color: var(--detalhe);
+    font-size: 2.5rem;
+    font-weight: 750;
     letter-spacing: -1px;
 }
 
 .sec-problema .texto {
-    color: var(--texto-menu);       
-    font-size: 1.2rem;              
+    color: var(--texto-menu);
+    font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.5;               
-    opacity: 0.8;                   
+    line-height: 1.5;
+    opacity: 0.8;
 }
+
 .card-problema {
     background-color: var(--fundo-menu);
     border-radius: 16px;
@@ -380,7 +417,7 @@ body {
 }
 
 .tec-card-preto {
-    background: #000;
+    background: var(--fundo-escuro);
     border-radius: 16px;
     width: 42%;
     min-height: 320px;
@@ -408,8 +445,8 @@ body {
     align-items: center;
     font-size: 11px;
     font-weight: 600;
-    color: var(--detalhe);
-    background: rgba(6, 95, 70, 0.08);
+    color: var(--tag-texto);
+    background: var(--tag-fundo);
     border-radius: 999px;
     padding: 4px 12px;
     margin-bottom: 1.25rem;
@@ -426,7 +463,7 @@ body {
 }
 
 .tec-titulo span {
-    color: #059668;
+    color: var(--detalhe-medio);
 }
 
 .tec-texto {
@@ -447,13 +484,14 @@ body {
 
 .tec-usada {
     font-size: 12px;
-    color: var(--detalhe);
+    color: var(--tag-texto);
     border: 1.5px solid var(--margem);
     border-radius: 999px;
     padding: 4px 14px;
     font-weight: 500;
-    background: rgba(6, 95, 70, 0.05);
+    background: var(--tag-fundo);
 }
+
 .tec-card-preto video {
     width: 100%;
     height: 100%;
@@ -479,7 +517,7 @@ body {
 }
 
 .obj-titulo span {
-    color: #059668;
+    color: var(--detalhe-medio);
 }
 
 .obj-layout {
@@ -510,7 +548,7 @@ body {
 .obj-linha-v {
     width: 2px;
     height: 80px;
-    background: #d1fae5;
+    background: var(--margem);
 }
 
 .obj-icone-central {
@@ -523,19 +561,18 @@ body {
     justify-content: center;
     font-size: 11px;
     font-weight: 700;
-    color: #9FE1CB;
+    color: var(--detalhe-suave);
     letter-spacing: 1px;
     transition: transform 0.3s ease;
 }
 
 .obj-card {
     background: var(--fundo-menu);
-    border: 1.5px solid #d1fae5;
+    border: 1.5px solid var(--borda-card);
     border-radius: 16px;
     padding: 1.5rem;
     max-width: 280px;
     width: 100%;
-    opacity: 0;
     opacity: 1;
 }
 
@@ -582,7 +619,7 @@ body {
 }
 
 .obj-card-destaque .obj-card-titulo {
-    color: #9FE1CB;
+    color: var(--detalhe-suave);
 }
 
 .obj-card-texto {
@@ -594,11 +631,11 @@ body {
 }
 
 .obj-card-destaque .obj-card-texto {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--texto-suave);
 }
 
 .obj-card-destaque .obj-card-texto strong {
-    color: #fff;
+    color: var(--texto);
     font-weight: 600;
 }
 
@@ -625,7 +662,7 @@ body {
 }
 
 .pub-titulo span {
-    color: #059668;
+    color: var(--detalhe-medio);
 }
 
 .pub-texto {
@@ -649,7 +686,7 @@ body {
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
-    border: 1.5px solid #d1fae5;
+    border: 1.5px solid var(--borda-card);
 }
 
 .pub-mapa-img {
@@ -676,12 +713,12 @@ body {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: #065f46;
+    background: var(--detalhe);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    border: 2px solid #fff;
+    border: 2px solid var(--texto);
     transition: transform 0.2s ease;
 }
 
@@ -703,8 +740,8 @@ body {
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    background: #065f46;
-    color: #fff;
+    background: var(--detalhe);
+    color: var(--texto);
     border-radius: 12px;
     padding: 12px 16px;
     width: 180px;
@@ -715,7 +752,7 @@ body {
 
 .pub-popup strong {
     display: block;
-    color: #9FE1CB;
+    color: var(--detalhe-suave);
     margin-bottom: 4px;
 }
 
@@ -723,10 +760,9 @@ body {
     display: block;
 }
 
-/* Posição dos pins no mapa */
-#pin-viajante    { top: 75%; left: 29%; }
+#pin-viajante    { top: 76%; left: 26%; }
 #pin-resgatador  { top: 66%; left: 73%; }
-/* BENEFICIOS */
+
 .beneficios {
     background-color: var(--secao);
     padding: 3rem 2rem;
@@ -745,7 +781,7 @@ body {
 }
 
 .titulo-ben span {
-    color: #059668;
+    color: var(--detalhe-medio);
 }
 
 .subtitulo-ben {
@@ -759,20 +795,19 @@ body {
 .slideshow {
     max-width: 860px;
     margin: 0 auto;
-    position: relative; 
+    position: relative;
     border-radius: 16px;
     overflow: hidden;
 }
 
 .slide {
-    display: none; 
+    display: none;
     width: 100%;
 }
 
 .slide.ativo {
     display: block;
 }
-
 
 .slide-img {
     width: 100%;
@@ -786,23 +821,24 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(6, 49, 35, 0.85));
+    background: linear-gradient(transparent, var(--gradiente-slide));
     padding: 2rem 1.5rem 1.5rem;
 }
 
 .titulo-card {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #9FE1CB;
+    color: var(--detalhe-suave);
     margin-bottom: 0.4rem;
 }
 
 .texto-card {
     font-size: 14px;
-    color: rgba(255,255,255,0.85);
+    color: var(--texto-slide);
     font-weight: 300;
     line-height: 1.6;
 }
+
 .sec-aplicacao {
     background-color: var(--secao);
     padding: 4rem 2rem;
@@ -821,13 +857,13 @@ body {
 }
 
 .apl-titulo span {
-    color: #059668;
+    color: var(--detalhe-medio);
 }
 
 .apl-card {
     background: var(--detalhe);
     border-radius: 20px;
-    max-width: 950px; 
+    max-width: 950px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -845,20 +881,20 @@ body {
 .apl-card-titulo {
     font-size: 22px;
     font-weight: 700;
-    color: #fff;
+    color: var(--texto);
     margin-bottom: 6px;
 }
 
 .apl-card-subtitulo {
     font-size: 13px;
-    color: #9FE1CB;
+    color: var(--detalhe-suave);
     font-weight: 400;
     opacity: 0.8;
 }
 
 .apl-separa {
     height: 1px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--borda-sutil);
     margin: 0 2.5rem;
 }
 
@@ -877,7 +913,7 @@ body {
 .apl-card-num {
     font-size: 11px;
     font-weight: 700;
-    color: #5DCAA5;
+    color: var(--detalhe-claro);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -885,49 +921,124 @@ body {
 
 .apl-card-texto {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--texto-suave);
     line-height: 1.75;
     font-weight: 300;
 }
 
 .apl-card-texto strong {
-    color: #fff;
+    color: var(--texto);
     font-weight: 600;
 }
 
-
 .apl-card-rodape {
     padding: 2rem 2.5rem;
-    display: block;          
-    text-align: center;      
+    display: block;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
 
-
 .apl-card-rodape img {
-    max-width: 100%;        
-    height: auto;            
-    display: inline-block;   
-    margin: 0 auto;        
-    border-radius: 12px;     
-    background-color: #000; 
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: var(--fundo-escuro);
 }
 
+.foo-rodape {
+    background-color: var(--detalhe);
+    color: var(--texto-suave);
+    padding: 4rem 2rem 2rem;
+    margin-top: 4rem;
+    font-family: inherit;
+}
 
+.foo-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
-/* aq é o começo da responsividadee*/
+.foo-coluna {
+    flex: 1;
+}
+
+.foo-logo {
+    color: var(--texto);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.foo-descricao {
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.foo-subtitulo {
+    color: var(--detalhe-claro);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.2rem;
+}
+
+.foo-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.foo-links li {
+    margin-bottom: 0.7rem;
+}
+
+.foo-links a {
+    color: var(--texto-suave);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    transition: color 0.2s ease;
+}
+
+.foo-links a:hover {
+    color: var(--texto);
+}
+
+.foo-texto-contato {
+    font-size: 13px;
+    margin-bottom: 0.7rem;
+    font-weight: 300;
+}
+
+.foo-inferior {
+    max-width: 950px;
+    margin: 3rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--borda-sutil);
+    text-align: center;
+    font-size: 12px;
+    color: var(--hover-menu);
+    font-weight: 300;
+}
 
 @media (max-width: 600px) {
 
-    /* Hero Containers */
     .hero-section,
     .hero-overlay {
         min-height: 340px;
     }
 
     .hero-overlay {
-        padding: 32px 20px;       
+        padding: 32px 20px;
     }
 
     .hero-brand {
@@ -936,7 +1047,6 @@ body {
         gap: 12px;
     }
 
-
     .hero-logo-box {
         width: 55px;
         height: 55px;
@@ -944,19 +1054,19 @@ body {
     }
 
     .hero-logo-img {
-        width: 35px;               
+        width: 35px;
         height: 35px;
     }
 
     .hero-titles h1 {
-        font-size: 3rem;         
+        font-size: 3rem;
         letter-spacing: -1.5px;
         line-height: 0.9;
     }
 
     .hero-titles h2 {
         font-size: 0.95rem;
-        margin-top: -2px;          
+        margin-top: -2px;
     }
 
     .hero-tagline {
@@ -964,38 +1074,37 @@ body {
     }
 
     .hero-badges {
-        flex-direction: column;   
+        flex-direction: column;
         gap: 10px;
         width: 100%;
     }
 
     .badge-item {
         width: 100%;
-        justify-content: flex-start; 
+        justify-content: flex-start;
     }
 
-    /* Menu Horizontal com Scroll Inteligente */
     .main-header {
         padding: 20px 16px;
     }
 
     .header-container {
         width: 100%;
-        overflow-x: auto; 
-        padding-bottom: 10px; 
+        overflow-x: auto;
+        padding-bottom: 10px;
     }
 
     .header-container::-webkit-scrollbar {
-        height: 5px; 
+        height: 5px;
     }
 
     .header-container::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0.05); 
+        background: var(--sombra-leve);
         border-radius: 10px;
     }
 
     .header-container::-webkit-scrollbar-thumb {
-        background: var(--arredondado); 
+        background: var(--arredondado);
         border-radius: 10px;
     }
 
@@ -1012,17 +1121,19 @@ body {
     .sec-problema {
         padding: 40px 16px;
     }
-    
+
     .sec-problema h2.identity-title {
-        font-size: 1.8rem;          
+        font-size: 1.8rem;
     }
-    
+
     .sec-problema .texto {
-        font-size: 1rem;            
+        font-size: 1rem;
     }
+
     .card-problema-img {
         height: 170px;
     }
+
     .card-problema-texto {
         font-size: 0.95rem;
         padding: 1rem 1.25rem;
@@ -1063,7 +1174,7 @@ body {
         height: 2px;
     }
 
-     .pub-pin-circulo {
+    .pub-pin-circulo {
         width: 28px;
         height: 28px;
         font-size: 12px;
@@ -1098,6 +1209,12 @@ body {
         flex-wrap: wrap;
     }
 
-    
-}
+    .foo-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
 
+    .foo-coluna {
+        text-align: center;
+    }
+}

@@ -75,3 +75,6 @@ function slide3() {
 
 
 slide1();
+
+//quiz cor tema
+ 

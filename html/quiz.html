@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/quiz.css">
+    <title>Quiz - Oasis</title>
+</head>
+<body>
+
+    <div class="quiz-wrapper">
+
+        <div class="quiz-voltar">
+            <a href="../index.html" class="btn-voltar"> Voltar</a>
+        </div>
+        
+        <div class="quiz-header">
+    <div class="quiz-header-icone"><span></span></div>
+    <div>
+        <h1>QUIZ OASIS</h1>
+        <p>Teste seus conhecimentos sobre emergências</p>
+    </div>
+
+    <div class="item-seletor-tema" style="margin-left: auto;">
+        <button class="botao-gode-gatilho" onclick="alternarMenuTema()">
+            <img src="../imgs/gode.svg" alt="Menu de Temas">
+        </button>
+        <div id="menu-opcoes-tema" class="janela-opcoes-temas">
+            <button onclick="mudarTema('padrao')">
+                <img src="../imgs/padrao.png" alt="Sol"> Padrão
+            </button>
+            <button onclick="mudarTema('dark')">
+                <img src="../imgs/Dark.png" alt="Lua"> Escuro
+            </button>
+            <button onclick="mudarTema('oasis')">
+                <img src="../imgs/Cacto.png" alt="Cacto"> Oásis
+            </button>
+        </div>
+    </div>
+
+</div>
+
+        <main>
+            <div class="content">
+                <div class="quiz-progress">
+                    <div class="quiz-progress-fill" id="progressFill"></div>
+                </div>
+                <span class="spnQtd"></span>
+                <span class="questions"></span>
+                <div class="answers"></div>
+                <button class="quiz-proxima" id="btnProxima">Próxima →</button>
+            </div>
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+
+    </div>
+
+
+<footer class="foo-rodape">
+    <div class="foo-container">
+        <div class="foo-coluna">
+            <h3 class="foo-logo">Oasis</h3>
+            <p class="foo-descricao">Protegendo vidas e garantindo socorro em locais isolados através de tecnologia e conectividade.</p>
+        </div>
+
+        <div class="foo-coluna">
+            <h4 class="foo-subtitulo">Navegação</h4>
+            <ul class="foo-links">
+                <li><a href="html/quiz.html">Quiz</a></li>
+                <li><a href="#aplicacao">Como Funciona</a></li>
+                <li><a href="#objetivo">Objetivos</a></li>
+            </ul>
+        </div>
+
+        <div class="foo-coluna">
+            <h4 class="foo-subtitulo">Participantes LGF</h4>
+            <p class="foo-texto-contato">RM 573796 - Laura Siqueira</p>
+            <p class="foo-texto-contato">RM 570979 - Flávia Camerim </p>
+            <p class="foo-texto-contato">RM 572947 - Giovanna Nunes </p>
+        </div>
+    </div>
+
+    <div class="foo-inferior">
+        <p>&copy; 2026 Oasis. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
